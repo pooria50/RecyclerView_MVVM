@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data class = "NewsBinding">
+        <variable
+            name="Newsview"
+            type="com.example.pooria.mvvm_recycylerview.viewmodel.NewsModel"/>
+    </data>
+
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginTop="20dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/titleval"
+        android:layout_margin="15dp"
+        android:text="@{Newsview.titl}"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/descval"
+        android:text="@{Newsview.Desc}"
+        android:layout_margin="15dp"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+</layout>
